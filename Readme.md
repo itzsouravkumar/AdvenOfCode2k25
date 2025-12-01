@@ -69,7 +69,7 @@ AdventOfCode2025/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/AdventOfCode2025.git
+   git clone https://github.com/itzsouravkumar/AdvenOfCode2k25.git
    cd AdventOfCode2025
    ```
 
