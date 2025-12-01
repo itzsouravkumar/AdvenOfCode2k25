@@ -1,0 +1,101 @@
+# Day 1: Advent of Code 2025
+
+## Task 1: Safe Dial Password Calculation
+
+### Approach
+My approach is simple: I will take the input file and parse all the lines, considering each line as input for rotations and number of steps to move.
+
+I am doing this in JavaScript.
+
+### Algorithm
+1. Read the input file line by line.
+2. For each line, split the line into direction (L or R) and number of steps.
+3. Initialize the starting position of the dial at 0.
+4. For each instruction, update the position based on the direction and steps.
+5. Use modulo operation to ensure the position wraps around the dial (0-9).
+
+### Implementation
+Let's implement and see what happens line by line.
+
+```javascript
+// Read input from file
+const fs = require('fs');
+const input = fs.readFileSync('Day-1/task1_input.txt', 'utf-8').trim().split('\n'); // It will read the input from 'task1_input.txt' file and split it into lines
+
+let dialPosition = 50; // Starting position
+let zeroCount = 0; // Count of times the dial points at 0
+
+// Now our input variable contains the lines from the file and our approach will be simple
+input.forEach(line => { // Here we iterate through each line of the input
+    const direction = line[0]; // Get the direction (L or R)
+    const distance = parseInt(line.slice(1), 10); // Get the distance and convert it to an integer
+    if(direction === 'L') {
+        dialPosition = (dialPosition - distance + 100) % 100; // Rotate left
+    } else if(direction === 'R') {
+        dialPosition = (dialPosition + distance) % 100; // Rotate right
+    }
+    if(dialPosition === 0) {
+        zeroCount++; // Increment count if dial points at 0
+    }
+});
+
+console.log(zeroCount); // Output the result
+```
+
+### Result
+Result for my input is **1172**.
+
+---
+
+## Task 2: First Repeated Dial Position
+
+3. Initialize the starting position of the dial at 0.
+4. Count zeros during each step of rotation, not just after completing each instruction.
+
+### Implementation
+```javascript
+### Algorithm:
+1. Read the input file line by line.
+2. For each line, split the line into direction (L or R) and number of steps.
+3. Initialize the starting position of the dial at 0.
+4. Use a set to keep track of visited positions.
+```javascript
+const fs = require('fs');
+const input = fs.readFileSync('Day-1/task2_input.txt', 'utf-8').trim().split('\n'); // It will read the input from 'task2_input.txt' file and split it into lines
+
+// In this task, we need to count how many times the dial points at 0, including during rotations
+let dialPosition = 50;
+let zeroCount = 0;
+
+// Improvement is to count zeros during the rotation itself
+input.forEach(line => { // Here we iterate through each line of the input
+    const direction = line[0]; // Get the direction (L or R)
+    const distance = parseInt(line.slice(1), 10); // Get the distance and convert it to an integer
+    if(direction === 'L') {
+        // Count zeros during left rotation
+        for(let i = 1; i <= distance; i++) { // Rotate one step at a time
+            dialPosition = (dialPosition - 1 + 100) % 100; // Rotate left by 1
+            if(dialPosition === 0) {
+                zeroCount++;
+            }
+        }
+    } else if(direction === 'R') {
+        for(let i = 1; i <= distance; i++) { // Rotate one step at a time
+console.log(zeroCount); 
+```
+
+### Result
+Result for my input is **6932**.
+
+---
+
+## Summary
+Day 1 tasks completed successfully! Both parts involved tracking dial positions with rotations, with Task 2 requiring more granular tracking during the rotation process itself.
+    }
+});
+
+console.log(zeroCount); 
+``` 
+Result for my input is 6932.
+
+Here, Day1 task is completed.
