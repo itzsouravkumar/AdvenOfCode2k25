@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Advent of Code](https://img.shields.io/badge/Advent%20of%20Code-2025-brightgreen)
-![Stars](https://img.shields.io/badge/⭐_Stars-14-yellow)
+![Stars](https://img.shields.io/badge/⭐_Stars-16-yellow)
 ![Language](https://img.shields.io/badge/Language-JavaScript-f7df1e?logo=javascript)
 ![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)
 
@@ -24,13 +24,13 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) challenges
 | 05 | [Cafeteria](https://adventofcode.com/2025/day/5) | ⭐ | ⭐ | [Code](./Day-5) | [Docs](./Day-5/document.md) |
 | 06 | [Trash Compactor](https://adventofcode.com/2025/day/6) | ⭐ | ⭐ | [Code](./Day-6) | [Docs](./Day-6/document.md) |
 | 07 | [Laboratories](https://adventofcode.com/2025/day/7) | ⭐ | ⭐ | [Code](./Day-7) | [Docs](./Day-7/document.md) |
-| 08 | TBD | 🔒 | 🔒 | [Code](./Day-8) | [Docs](./Day-8/document.md) |
+| 08 | [Playground](https://adventofcode.com/2025/day/8) | ⭐ | ⭐ | [Code](./Day-8) | [Docs](./Day-8/document.md) |
 | 09 | TBD | 🔒 | 🔒 | [Code](./Day-9) | [Docs](./Day-9/document.md) |
 | 10 | TBD | 🔒 | 🔒 | [Code](./Day-10) | [Docs](./Day-10/document.md) |
 | 11 | TBD | 🔒 | 🔒 | [Code](./Day-11) | [Docs](./Day-11/document.md) |
 | 12 | TBD | 🔒 | 🔒 | [Code](./Day-12) | [Docs](./Day-12/document.md) |
 
-**Total Stars: 14/24** ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+**Total Stars: 16/24** ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
 ---
 
